@@ -1,8 +1,9 @@
-num1 = int(input("Put in a number: "))
-num_str = str(num1)
+allowed_input = [9,12,16,32]
+is_num1_allowed = 0
+num1 = int(input("Insert any of the following numbers (9; 12 ;16 ;32): "))
 
-if num1%2 == 0:
-    s = "me "
-    print(s+num_str)
-else:
-    print(f'{num1}')
+while is_num1_allowed == 0:
+    num1 = int(input("Try again(9; 12 ;16 ;32): "))
+    is_num1_allowed = allowed_input.count(num1)
+#end while
+print(f"You chose {num1}")
