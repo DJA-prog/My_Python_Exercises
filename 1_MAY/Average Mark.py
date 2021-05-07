@@ -6,3 +6,10 @@ print(student_marks)
 # don't change the code above
 
 #Write your code below
+total_mark = 0
+num_student_marks = len(student_marks)
+for mark in student_marks:
+    total_mark += mark
+average_mark = round(total_mark / num_student_marks)
+print(f"The average mark for {num_student_marks} students are {average_mark}")
+# 75 60 85 45 63 50 70
