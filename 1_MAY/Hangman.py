@@ -42,5 +42,5 @@ while life > 0:
     if (word_done == 0):
         print("You Won")
         break
-
+print(word_guess)
 print("Game over")
