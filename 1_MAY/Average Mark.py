@@ -7,8 +7,9 @@ print(student_marks)
 
 #Write your code below
 total_mark = 0
-num_student_marks = len(student_marks)
+num_student_marks = 0
 for mark in student_marks:
+    num_student_marks += 1
     total_mark += mark
 average_mark = round(total_mark / num_student_marks)
 print(f"The average mark for {num_student_marks} students are {average_mark}")
