@@ -20,6 +20,7 @@ for numbers_in_pass in range(number_count):
     pass_list.append(random.randint(0, 9))
 
 random.shuffle(pass_list)
+
 for x in pass_list:
     x = str(x)
     PyPassword += x
