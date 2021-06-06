@@ -6,7 +6,7 @@ seed_number = int(input("Create your seed number: "))
 random.seed(seed_number)
 
 # Split the string
-name_as_csv = input("Give everybody's names (separated by , and spcae):  ")
+name_as_csv = input("Give everybody's names (separated by , and space):  ")
 names = name_as_csv.slipt(", ")
 # Don't change the code above
 
