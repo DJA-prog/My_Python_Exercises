@@ -13,4 +13,3 @@ while go == 0:
         print("Tails")
     else:
         print("Heads")
-        
