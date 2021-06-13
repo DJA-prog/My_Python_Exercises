@@ -1,95 +1,48 @@
-import turtle
-import time
+import turtle as t
 import random
+import colorgram
+num = [0,1,2,3,4,5,6,7,8,9]
+timmy = t.Turtle()
+screen = t.Screen()
 
-timmy = turtle.Turtle()
-screen = turtle.Screen()
+ecolors = []
+colors = colorgram.extract('img.png', 3)
 
-timmy.shape("turtle")
-timmy.color("green")
+for z in range(3):
+    ccolor = colors[z].rgb
+    #hex_color = ""
+    # a=0
+    # for y in ccolor:
+    #     a+=1
+    #     if (a < 3):
+    #         hex_color += str(y) + ","
+    #     else:
+    #         hex_color += str(y)
+    # ecolors.append("Rgb("+hex_color+")")
+    ecolors.append(ccolor)
+print(ecolors)
 
-def random_color():
-    r = random.randint(0, 255)
-    g = random.randint(0, 255)
-    b = random.randint(0, 255)
-    turtle_color = (r, g, b)
-    return turtle_color
 
-# for x in range(0, 4):
-#     timmy.left(90)
-#     timmy.forward(100)
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.right(90)
-#     timmy.forward(100)
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.left(90)
-#     timmy.backward(100)
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.right(90)
-#     timmy.backward(100)
-
-def dashed_for():
-    for x in range(5):
-        timmy.forward(10)
-        timmy.penup()
-        timmy.forward(10)
+timmy.penup()
+timmy.right(90)
+timmy.forward(200)
+timmy.right(90)
+timmy.forward(200)
+timmy.right(180)
+for x in range(10):
+    for x in range(10):
         timmy.pendown()
-
-def dashed_back():
-    for x in range(5):
-        timmy.backward(10)
+#         screen.colormode(255)
+#         timmy.pencolor(random.choice(ecolors))
+        timmy.dot(20, random.choice(ecolors))
         timmy.penup()
-        timmy.backward(10)
-        timmy.pendown()
-
-# for x in range(0, 4):
-#     timmy.left(90)
-#     dashed_for()
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.right(90)
-#     dashed_for()
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.left(90)
-#     dashed_back()
-#
-# time.sleep(2)
-#
-# for x in range(0, 4):
-#     timmy.right(90)
-#     dashed_back()
-
-color = ["silver", "red", "blue", "green", "orange", "purple", "yellow", "violet", "pink"]
-
-def shape(angle, sides):
-    for z in range(sides):
-        timmy.right(angle)
-        dashed_for()
-
-
-
-for x in range(3, 10):
-    timmy.pencolor(random_color())
-    shape(360/x, x)
-
-
+        timmy.forward(50)
+    timmy.left(90)
+    timmy.forward(50)
+    timmy.left(90)
+    timmy.forward(500)
+    timmy.right(180)
 
 screen.exitonclick()
 
 print(timmy)
-
-random.choice(0, 90, 180, 360)
