@@ -10,4 +10,4 @@ toyota = Car() #Object
 toyota.color = "Black"
 toyota.doors = 4
 
-print(ferrary.doors)
+print(toyota.color)
