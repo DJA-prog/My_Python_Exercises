@@ -2,11 +2,11 @@ class Car:
     pass
 
 
-ferrary = Car() #Object
-ferrary.color = "Red"
-ferrary.doors = 2
+ferrary = Car() #Setting class to variable
+ferrary.color = "Red" #Setting object (color) to "red"
+ferrary.doors = 2 #Setting object (doors) to 2
 
-toyota = Car() #Object
+toyota = Car() #Setting class to variable
 toyota.color = "Black"
 toyota.doors = 4
 
