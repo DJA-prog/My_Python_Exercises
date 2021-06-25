@@ -1,7 +1,7 @@
 import colorgram
 
 # Extract 6 colors from an image.
-colors = colorgram.extract('img.png', 6)
+colors = colorgram.extract('6.jpg', 6)
 
 # colorgram.extract returns Color objects, which let you access
 # RGB, HSL, and what proportion of the image was that color.

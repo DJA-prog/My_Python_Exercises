@@ -7,7 +7,7 @@ timmy = t.Turtle()
 screen = t.Screen()
 
 e_colors = []
-colors = colorgram.extract('img.png', 3)
+colors = colorgram.extract('6.jpg', 3)
 
 for z in range(3):
     c_color = colors[z].rgb
