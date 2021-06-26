@@ -14,7 +14,7 @@ class Calcu:
     def multiplication(self, val1, val2):
         return val1 * val2
 
-    def divisio(self, val1, val2):
+    def division(self, val1, val2):
         return val1 / val2
 
     def power(self, val1, val2):
