@@ -1,22 +1,27 @@
-class Employee:
-    """docstring for  employee."""
-    raise_amount = 1.04
 
-    def __init__(self, first, last, pay):  # method
-        self.first = first
-        self.last = last
-        self.email = first.lower() + '.' + last.lower() + '@mail.com'
-        self.pay = pay
+# class chair:
+#     def __init__(self, legs, backSupport, cushion):
+#         self.legs = legs
+#         self.backSupport = backSupport
+#         self.cushion = cushion
 
-    def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+from module_001 import calc
 
-    def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
+val1 = input("Value one: ")
+val2 = input("Value two: ")
+oper = input("Choose: '+' '-' '*' '/': ")
+calcs = calc(val1, val2)
 
+if oper == "+":
+    print(calcs.add())
 
-emp_1 = Employee('Corry', 'Roden', 6000)  # instance set
-emp_2 = Employee('Lorry', 'Cart', 55000)  # instance set
+elif oper == "-":
+    print(calcs.sub())
 
-print(emp_1.raise_amount)
-print(Employee.raise_amount)
+elif oper == "*":
+    print(calcs.multi())
+
+elif oper == "/":
+    print(calcs.div())
+else:
+    print(f"{oper} is not a choice of input!")
