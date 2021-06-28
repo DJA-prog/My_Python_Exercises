@@ -1,5 +1,5 @@
 from tkinter import *
-from calculatorM import *
+from adv_calc_oper import *
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
