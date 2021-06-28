@@ -1,0 +1,23 @@
+<data>
+    <calculation id="1">
+        <date>27-06-2021</date>
+        <time>12:14:15</time>
+        <equation>123+236</equation>
+        <answer>359</answer>
+    </calculation>
+    <calculation id="2">
+        <date>27-06-2021</date>
+        <time>17-14-14</time>
+        <equation>23*2</equation>
+        <answer>46</answer>
+    </calculation>
+</data>
+
+<data>
+    <calculation answer="359" date="27-06-2021" equation="123+236" id="1" time="12:14:15" />
+    <calculation answer="46" date="27-06-2021" equation="23*2" id="2" time="17-14-14" />
+    <calculation answer="5" date="27-06-2021" equation="2+3" id="3" time="17-14-30" />
+    <calculation answer="60" date="28-06-2021" equation="63-3" id="4" time="22-10-22" />
+    <calculation answer="570" date="28-06-2021" equation="95*6" id="5" time="22-10-43" />
+    <calculation answer="89" date="28-06-2021" equation="85+9/2" id="6" time="22-10-43" />
+</data>
