@@ -6,14 +6,17 @@ root.title("Simple calc")
 entry = Entry(root, width=35, fg="black", borderwidth=5)
 entry.grid(row=0, column=0, columnspan=3, padx=10, pady=5)
 
+
 def button_click(number):
     current = entry.get()
     entry.delete(0, END)
     entry.insert(0, str(current) + str(number))
 
+
 def button_clear():
     current = ""
     entry.delete(0, END)
+
 
 def button_add():
     val = entry.get()
@@ -22,11 +25,13 @@ def button_add():
     current = ""
     entry.delete(0, END)
 
+
 def button_equal():
     val_2 = entry.get()
     current = ""
     entry.delete(0, END)
     entry.insert(0, val_1 + int(val_2))
+
 
 button_1 = Button(root, text="1", padx=40, pady=20, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=40, pady=20, command=lambda: button_click(2))
