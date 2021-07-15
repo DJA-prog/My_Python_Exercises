@@ -1,0 +1,82 @@
+#################################
+##IMPORTS ZONE
+#################################
+from <module> import <what you will need>
+=> from tkinter import *
+(* means all)
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@  #################################
+@@  ##VARIABLES ZONE
+@@  #################################
+@@
+@@  #################################
+@@  ##INPUTS ZONE
+@@  #################################
+@@
+@@  #################################
+@@  ##FUNCTIONS ZONE
+@@  #################################
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(The above can sometimes overlap)
+
+=>root = Tk()                     (variable)
+  root.title("Lab 2")             (Defining variable)
+  root.geometry('350x200+10+10')  (Defining variable)
+  root.config(bg='#84BF04')       (Defining variable)
+
+(KEEPING CONCEPTS AND THINGS GROUPED TOGETHER IN ZONES)
+
+(I PREFER TO HAVE MY FUNCTIONS FIRST THEN THE REST)
+(NOTE THAT THERE ARE DOUBLE LINE SPACES ABOVE AND BELOW EACH FUNCTION)
+
+
+=>def button_enter():
+    x = eval(e1b.get())
+    y = eval(e2b.get())
+    r = round(sqrt(x ** 2 + y ** 2), 2)
+    angle = round(degrees(atan(y / x)), 2)
+    e0b.delete(0, END)
+    e1b.delete(0, END)
+    e2b.delete(0, END)
+    answer = str(r) + 'Cis' + str(angle)
+    e0b.insert(0, answer)
+
+
+=>ch9_count = 0     (Defining variable)
+  ch9_average = 0   (Defining variable)
+  ch9_scores = []   (Defining variable)
+
+=>ch11_days = Entry(root, width=10, bg="#A9CF54", fg="black")
+  ch11_days.insert(0, ch11_day)
+  ch11_days.grid(row=0, column=2)
+
+(VARIABLES ARE RELATED OR ABRIVATIONS FROM THE TASK)
+
+(HERE I USED e TO DENOTE ENTRY, NUMBER(0) TO DENOTE DIFFERENCE, ALPHABET(a) TO DENOTE SUB-DIFFERENCE)
+
+=>e0a = Label(root, text="Polar form: ") (EVEN THOUGH Lable is l, I DENOTED IT AS e DUE TO RELATION)
+  e0a.grid(row=0, column=0)
+
+  e0b = Entry(root)
+  e0b.grid(row=0, column=1)
+
+  e1a = Label(root, text="X: ")
+  e1a.grid(row=1, column=0)
+
+  e1b = Entry(root)
+  e1b.grid(row=1, column=1)
+
+  e2a = Label(root, text="Y:")
+  e2a.grid(row=2, column=0)
+
+  e2b = Entry(root)
+  e2b.grid(row=2, column=1)
+
+=>Button(root, text="Enter", command=button_enter, bg="green").grid(row=7, column=1)
+
+(I PREFER TO FIRST HAVE LABELS AND ENTRIES BEFORE BUTTONS)
+#################################
+##MAIN LOOPS ZONE
+#################################
+=>root.mainloop()  # event loop
