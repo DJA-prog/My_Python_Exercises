@@ -137,7 +137,8 @@ def button_equal():
     screen1.insert(0, screen_input[0])
     history_index_max = 0
     new_data_id = next_id()
-    data = ET.Element("calculation", {"id": str(new_data_id), "date": str(present_time.strftime('%d-%m-%Y')), "time": str(present_time.strftime('%H-%M-%S')), "equation": str(disp), "answer": str(answer)})
+    #data = ET.Element("calculation", {"id": str(new_data_id), "date": str(present_time.strftime('%d-%m-%Y')), "time": str(present_time.strftime('%H-%M-%S')), "equation": str(disp), "answer": str(answer)})
+    data = ET.Element("calculation", {"id": str(new_data_id), "date": str(present_time.strftime('%d-%m-%Y')), "time": str(present_time.strftime('%H-%M-%S')), "equation": str(disp), "answer": str(screen_input[0])})
     xml_root.append(data)
     xml_tree.write('history1.xml')
     for x in xml_root:
